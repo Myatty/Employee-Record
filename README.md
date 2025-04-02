@@ -48,7 +48,7 @@ Once the services are running, you can access the following:
 
 <ul>
   <li>Frontend: http://localhost:3000 (React application)</li>
-  <li>Backend: The backend service runs on port 8080 inside the container.</li>
+  <li>Backend: The backend service runs on port 8080 inside the container. http://localhost:8080/api/employees is API Endpoint</li>
 </ul>
 
 ### Stopping the Application
