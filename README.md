@@ -65,7 +65,7 @@ This will stop and remove all the containers, networks, and volumes created by D
 ## Backend (Spring Boot)
 The backend is a Spring Boot application that exposes a RESTful API for managing employee records. It uses an H2 in-memory database for simplicity and testing purposes.
 
-CORS: Configured to allow requests from http://localhost:3000 (frontend).
+CORS: Configured to allow requests from http://localhost:3000 (frontend). </br>
 API Endpoints: The backend provides endpoints for creating, reading, updating, and deleting employee records.
 
 ## Frontend (React with TypeScript)
