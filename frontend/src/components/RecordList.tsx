@@ -45,7 +45,7 @@ const RecordList: React.FC = () => {
     useEffect(() => {
         const getRecords = async () => {
             try {
-                const response = await fetch("http://localhost:8080/api/employees");
+                const response = await fetch("/api/employees");
                 if (!response.ok) {
                     throw new Error(`An error occurred: ${response.statusText}`);
                 }
@@ -60,7 +60,7 @@ const RecordList: React.FC = () => {
 
     const deleteRecord = async (id: string) => {
         try {
-            await fetch(`http://localhost:8080/api/employees/${id}`, {
+            await fetch(`/api/employees/${id}`, {
                 method: "DELETE",
             });
             setRecords((prevRecords) => prevRecords.filter((record) => record.id !== id));

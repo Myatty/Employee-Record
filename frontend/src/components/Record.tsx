@@ -25,7 +25,7 @@ export default function Record() {
             setIsNew(false);
             try {
                 const response = await fetch(
-                    `http://localhost:8080/api/employees/${id}`
+                    `/api/employees/${id}`
                 );
 
                 if (!response.ok) {
@@ -60,7 +60,7 @@ export default function Record() {
         try {
             let response: Response;
             if (isNew) {
-                response = await fetch("http://localhost:8080/api/employees", {
+                response = await fetch("/api/employees", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ export default function Record() {
                 });
             } else {
                 if (!params.id) throw new Error("No ID provided for update");
-                response = await fetch(`http://localhost:8080/api/employees/${params.id}`, {
+                response = await fetch(`/api/employees/${params.id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json",
