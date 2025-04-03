@@ -8,6 +8,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
+RUN npm install -g typescript
 RUN npm run build
 
 ##### stage 2 #######
